@@ -1,0 +1,288 @@
+/*
+Theme Name: trial
+Theme URI: http://dotinstall.com
+Author: the WordPress team
+Author URI: http://wordpress.org/
+Description: The 2013 theme for WordPress takes us back to the blog, featuring a full range of post formats, each displayed beautifully in their own unique way. Design details abound, starting with a vibrant color scheme and matching header images, beautiful typography and icons, and a flexible layout that looks great on any device, big or small.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, flexible-width, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
+Text Domain: twentythirteen
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+body {
+	margin: 0;
+	color: #2E332E;
+}
+.head-title {
+	float: left;
+	font-size: 40px;
+	height: 50px;
+	margin-left: 30px;
+	position: absolute;
+	top: 60%;
+}
+.head-title::after {
+	position: absolute;
+	bottom: -4px;
+	left: 0;
+	content: '';
+	width: 100%;
+	height: 2px;
+	background: #53bf49;
+	transform: scale(0, 1);
+	transform-origin: left top;
+	transition: transform .3s;
+}
+.head-title:hover::after {
+	transform: scale(1, 1);
+}
+span {
+	color: #53bf49;
+}
+header {
+	background-color: #F8FCDE;
+	height: 200px;
+	position: relative;
+}
+.nav {
+	display: inline-block;
+	float: right;
+	margin-top: 15px;
+	margin-right: 15px
+}
+.btn {
+	cursor: pointer;
+	text-decoration: none;
+	width: 100px;
+	height: 30px;
+	border: solid 2px #53bf49;
+	border-radius: 5px;
+	line-height: 30px;
+	display: inline-block;
+	text-align: center;
+	padding: 0 0 0 0;
+	margin-right: 10px;
+}
+a:link {
+	color: #53bf49;
+}
+a:visited {
+	color: #53bf49;
+}
+.btn:hover {
+	color: white;
+	border: solid 2px #53bf49;
+	background-color: #53bf49;
+	transition: all 0.5s;
+}
+.pc img {
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+}
+.about {
+	height: 650px;
+	background-color: #E6FFE6;
+}
+.top {
+	display: inline-block;
+	text-align: center;
+	float: left;
+	height: 80px;
+	width: 100%;
+	margin: 40px 0;
+}
+.about-sub {
+	margin-bottom: -5px;
+}
+.icon {
+	width: 100px;
+	height: 100px;
+	margin-top: 20px;
+	width: 100%;
+	display: block;
+	transition-duration: 0.3s;
+}
+.icon:hover {
+	transform: scale(1.1);
+	transition-duration: 0.3s;
+}
+.about-box {
+	display: inline-block;
+	float: left;
+	width: 33%;
+	text-align: center;
+}
+.about-box p {
+	width: 70%;
+	display: inline-block;
+	margin-top: 20px;
+	font-size: 16px;
+	color: #2E332E;
+}
+.works {
+	height: 980px;
+	background-color: #DEF8FC;
+}
+.art-boxes {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 50px;
+}
+.art-box {
+	width: 350px;
+	height: 400px;
+}
+.art {
+	width: 250px;
+	height: 250px;
+	border-radius: 5%;
+	box-shadow: 0px 2px 7px 0px grey;
+	transition-duration: 0.3s;
+	overflow: hidden;
+}
+.fadein {
+	opacity: 0;
+	transform: translate(50px, 0px);
+	transition: all 1000ms;
+}
+/* 画面内に入った状態 */
+
+.fadein.scrollin {
+	opacity: 1;
+	transform: translate(0, 0);
+}
+.fadein2 {
+	opacity: 0;
+	transform: translate(-50px, 0px);
+	transition: all 1000ms;
+}
+
+.fadein2.scrollin {
+	opacity: 1;
+	transform: translate(0, 0);
+}
+.art:hover {
+	transform: scale(1.05);
+	transition-duration: 1s;
+}
+}
+.letter {
+	display: inline-block;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+.contact-text {
+	margin-top: 10px;
+}
+.contact-text p {
+	display: inline-block;
+	margin: 10px 10px 0 0;
+	width: 200px;
+}
+.contact-form {
+	height: 550px;
+	background-color: #FEEBFD;
+}
+.contact-message {
+	width: 80%;
+	text-align: left;
+}
+.inner {
+	margin-left: 100px;
+}
+.contact-submit {
+	width: 500px;
+	position: relative;
+	display: inline-block;
+	padding: 0.25em 0.5em;
+	text-decoration: none;
+	color: #FFF;
+	background: #53bf49;
+	border-radius: 4px;
+	font-weight: bold;
+	box-shadow: 0px 1px #B5A7B4;
+}
+.contact-submit:active {
+	box-shadow: none;
+}
+.contact-submit:focus {
+	outline: 0;
+}
+input {
+	width: 283px;
+}
+footer {
+	background-color: #F8FCDE;
+	color: #2E332E;
+	height: 120px;
+	padding: 40px;
+}
+footer ul {
+	list-style: none;
+	margin-right: 100px;
+}
+.footer-logo {
+	float: left;
+	font-size: 32px;
+}
+.footer-list {
+	float: right;
+}
+.footer-list li {
+	padding-bottom: 20px;
+}
+.footer-btn {
+	width: 50px;
+	height: 20px;
+	cursor: pointer;
+	padding: 0 0 0 0;
+}
+.footer-btn:hover {
+	color: #53bf49;
+}
+.post-area {
+	width:435px;
+	margin:auto;
+	background-color:white;
+}
+
+.post-area h2 {
+	margin-top:0px;
+}
+
+.post{
+	margin-bottom: 30px;
+}
+
+.post-header{
+	margin-bottom: 15px;
+}
+	.post-header h2{
+		font-size: 16px
+		font-weight:bold;
+	}
+.post-meta{
+	font-size: 12px;
+	padding: 7px 0;
+	color: #555;
+}
+.post-content{
+	overflow: hidden;
+}
+	.post-image{
+		float: left;
+		width: 115px;
+	}
+
+	.post-body{
+		margin-left: 115px;
+	}
+
+#content{
+	margin-left:30px;
+}
