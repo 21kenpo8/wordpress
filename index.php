@@ -25,7 +25,7 @@
     </div>
   </div>
   <div class="post-area">
-<h2>＊お知らせ＊</h2>
+<h2>☆お知らせ☆</h2>
 <?php
 if(have_posts()):
   while(have_posts()):
