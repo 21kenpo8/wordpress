@@ -25,7 +25,7 @@
     </div>
   </div>
   <div class="post-area">
-<h2>☆お知らせ☆！</h2>
+<h2>＊お知らせ＊</h2>
 <?php
 if(have_posts()):
   while(have_posts()):
@@ -107,20 +107,7 @@ else:
   <div class="contact-form">
     <div class="top">
       <h1><span>C</span>ONTACT FORM</h1>
-      <div class="contact-message">
-        <div class="inner">
-          <p>制作の依頼・ご相談などお気軽にお問い合わせくださいませ。
-            <Br> 下記フォームよりわかる範囲でご記入ください。必須の項目は必ずご記入お願いします。</p>
-          <div class="contact-content">
-            <div class="contact-text">
-              <p>名前:</p> <input type="text" placeholder="お名前"> </div>
-            <div class="contact-text">
-              <p>メールアドレス（必須）:</p> <input type="text" placeholder="メールアドレス"> </div>
-            <div class="contact-textarea">
-              <p>お問い合わせ内容（必須）:</p> <textarea name="name" rows="8" cols="80" placeholder="内容を入力してください"></textarea> </div>
-            <p>※必須項目は必ずご入力ください</p> <input class="contact-submit" type="submit" value="送信"> </div>
-        </div>
-      </div>
+      <?php echo do_shortcode( '[contact-form-7 id="41" title="コンタクトフォーム 1"]' ); ?>
     </div>
   </div>
   <?php get_footer(); ?>

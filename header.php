@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <!-- コメントのショートカット -->
-  <title>ぽよぽよポートフォリオサイト</title>
+  <title><?php wp_title('|', true, 'right'); bloginfo('name'); ?></title>
   <link rel="icon" href="favicon.ico">
   <meta name="description" content="ぽよぽよポートフォリオサイトです。">
   <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/style.css">
@@ -13,14 +13,8 @@
 <body>
   <header>
     <div class="head-title"> <span>P</span>OYO POYO PORTFOLIO </div>
-    <div class="nav"> <a class=" btn" href="http://localhost/wordpress/">
-  HOME
-  </a> <a class=" btn" href="http://localhost/wordpress/about/">
-   ABOUT
-   </a> <a class=" btn" href="http://localhost/wordpress/work/">
-   WORKS
- </a> <a class="btn" href="http://localhost/wordpress/contact-form/">CONTACT</a>
-</div>
+
  <div class="header-contact">
  </div>
+ <?php wp_nav_menu(); ?>
   </header>
